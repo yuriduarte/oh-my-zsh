@@ -1,6 +1,7 @@
 alias ll="ls -Glahs"
 alias ls="/bin/ls -G"
 alias psgrep="ps aux | egrep -v egrep | egrep"
+alias reload="source ~/.zshrc"
 
 # alias edit="emacs"
 function edit() {
@@ -47,6 +48,10 @@ alias gpr="git pull --rebase"
 alias gc="git checkout"
 alias gcm="git checkout master"
 alias gcd="git checkout develop"
+alias gitx="gita &"
+alias gl="git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'"
+alias gamend="git add --all && git commit --amend --no-edit"
+alias count="git shortlog -s --grep"
 
 function gcf() {
   git checkout feature/$1
@@ -104,4 +109,9 @@ alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
 # Campainha
-alias start-camp="pg_ctl start && redis-server & mps"
+alias start-camp="pg_ctl start && redis-server & code . && mps"
+alias ssh-camp-test="ssh ubuntu@srv-site-test.campainha.com.br"
+alias ssh-camp-prod="ssh ubuntu@srv-site-prod.campainha.com.br"
+
+# Ping Google DNS
+alias google="ping 8.8.8.8"
