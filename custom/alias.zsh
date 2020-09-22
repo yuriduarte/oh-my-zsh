@@ -62,6 +62,11 @@ alias gfff="git flow feature finish"
 alias gffp="git flow feature publish"
 alias gfft="git flow feature track"
 
+# YARN
+alias yt="yarn test"
+alias ytw="yarn test --watch"
+alias ysb="yarn storybook"
+
 
 # ASDF
 alias redis="redis-server . &"
@@ -83,6 +88,9 @@ alias es="ember s"
 # Gatsby
 alias gad="gatsby develop"
 alias gab="gatsby build"
+
+# NextJS
+alias cna="npx create-next-app --example https://github.com/yuriduarte/nextjs-boilerplate"
 
 # Commons
 alias rmds="find . -name '.DS_Store' -type f -delete"
