@@ -63,6 +63,10 @@ alias gffp="git flow feature publish"
 alias gfft="git flow feature track"
 
 # YARN
+alias ys="yarn start"
+alias yd="yarn dev"
+alias yb="yarn build"
+alias yg="yarn generate"
 alias yt="yarn test"
 alias ytw="yarn test --watch"
 alias ysb="yarn storybook"
