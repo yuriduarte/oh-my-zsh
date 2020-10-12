@@ -25,6 +25,7 @@ alias mps="mix phx.server"
 alias mpr="mix phx.routes"
 alias mted="MIX_ENV=test mix ecto.drop"
 alias mdg="mix deps.get"
+alias pgmps="pg_ctl start && mix phx.server"
 
 # Ruby
 alias be="bundle exec"
